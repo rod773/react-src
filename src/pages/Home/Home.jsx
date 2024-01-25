@@ -1,5 +1,5 @@
 import React from "react";
-
+import { StyledHome } from "./Home.styled";
 import "./home.scss";
 import { motion, AnimatePresence } from "framer-motion/dist/framer-motion";
 import { useState } from "react";
@@ -35,26 +35,28 @@ const Home = () => {
   }
 
   return (
-    <div className="container-main">
-      <main className="primary-container">
-        <AnimatePresence>
-          <motion.img
-            key={primaryProduct}
-            className="primary-product-image"
-            src={images[primaryProduct]}
-            alt=""
-            layoutId={`product-${primaryProduct}`}
-          />
-        </AnimatePresence>
-      </main>
-      <aside className="product-gallery">
-        <AnimatePresence>
-          {productIds.map((id) => (
-            <ProductImage id={id} key={id} onExpand={setAsPrimary} />
-          ))}
-        </AnimatePresence>
-      </aside>
-    </div>
+    <StyledHome>
+      <div className="container-main">
+        <main className="primary-container">
+          <AnimatePresence>
+            <motion.img
+              key={primaryProduct}
+              className="primary-product-image"
+              src={images[primaryProduct]}
+              alt=""
+              layoutId={`product-${primaryProduct}`}
+            />
+          </AnimatePresence>
+        </main>
+        <aside className="product-gallery">
+          <AnimatePresence>
+            {productIds.map((id) => (
+              <ProductImage id={id} key={id} onExpand={setAsPrimary} />
+            ))}
+          </AnimatePresence>
+        </aside>
+      </div>
+    </StyledHome>
   );
 };
 
