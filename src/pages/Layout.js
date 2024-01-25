@@ -5,12 +5,12 @@ const Layout = () => {
   return (
     <>
       <nav
-        class="navbar navbar-expand-lg bg-primary
+        className="navbar navbar-expand-lg bg-primary
       "
       >
-        <div class="container-fluid">
+        <div className="container-fluid">
           <button
-            class="navbar-toggler"
+            className="navbar-toggler"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#navbarNavDropdown"
@@ -18,22 +18,22 @@ const Layout = () => {
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <span class="navbar-toggler-icon"></span>
+            <span className="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <Link to="/" class="nav-link">
+          <div className="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul className="navbar-nav">
+              <li className="nav-item">
+                <Link to="/" className="nav-link">
                   Home
                 </Link>
               </li>
-              <li class="nav-item">
-                <Link to="/blogs" class="nav-link">
+              <li className="nav-item">
+                <Link to="/blogs" className="nav-link">
                   Blogs
                 </Link>
               </li>
-              <li class="nav-item">
-                <Link to="/contact" class="nav-link">
+              <li className="nav-item">
+                <Link to="/contact" className="nav-link">
                   Contact
                 </Link>
               </li>
