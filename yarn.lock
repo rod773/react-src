@@ -2824,6 +2824,11 @@ bcrypt-pbkdf@^1.0.0:
   dependencies:
     tweetnacl "^0.14.3"
 
+bezier-easing@^2.1.0:
+  version "2.1.0"
+  resolved "https://registry.npmjs.org/bezier-easing/-/bezier-easing-2.1.0.tgz#c04dfe8b926d6ecaca1813d69ff179b7c2025d86"
+  integrity sha512-gbIqZ/eslnUFC1tjEvtz0sgx+xTK20wDnYMIA27VA04R7w6xxXQPZDbibjA9DTWZRA2CXtwHykkVzlCaAJAZig==
+
 big.js@^5.2.2:
   version "5.2.2"
   resolved "https://registry.npmjs.org/big.js/-/big.js-5.2.2.tgz#65f0af382f578bcdc742bd9c281e9cb2d7768328"
@@ -2838,6 +2843,11 @@ binary-extensions@^2.0.0:
   version "2.2.0"
   resolved "https://registry.npmjs.org/binary-extensions/-/binary-extensions-2.2.0.tgz#75f502eeaf9ffde42fc98829645be4ea76bd9e2d"
   integrity sha512-jDctJ/IVQbZoJykoeHbhXpOlNBqGNcwXJKJog42E5HDPUwQTSdjCHdihjj0DlnheQ7blbT6dHOafNAiS8ooQKA==
+
+bindall-standalone@^1.0.5:
+  version "1.0.5"
+  resolved "https://registry.npmjs.org/bindall-standalone/-/bindall-standalone-1.0.5.tgz#f7430388f1c7f9a9ade0fc75a400e710f6692a1d"
+  integrity sha512-HDI7YBWXVJk/eoGz+e4lYQQJnYp1ZHcUvAY71lVptLMhQnDm86vD73AGPw2qIlgYR3P0bjmoAcXiA8qhFejBhA==
 
 bindings@^1.5.0:
   version "1.5.0"
@@ -7178,6 +7188,11 @@ left-pad@^1.3.0:
   resolved "https://registry.npmjs.org/left-pad/-/left-pad-1.3.0.tgz#5b8a3a7765dfe001261dde915589e782f8c94d1e"
   integrity sha512-XI5MPzVNApjAyhQzphX8BkmKsKUxD4LdyK24iZeQGinBN9yTQT3bFlCBy/aVx2HrNcqQGsdot8ghrjyrvMCoEA==
 
+lethargy@^1.0.2:
+  version "1.0.9"
+  resolved "https://registry.npmjs.org/lethargy/-/lethargy-1.0.9.tgz#138b0ae384d015c5233e0cc1eeba4d089af3c58b"
+  integrity sha512-nFM8blpCF9rqIL5mRAaTGc78W8oQixVtsD86jbEPvcI13+lDUYJf3R7DZQQL7tCiBpbGpGKMX2gwJFO9hiaOkg==
+
 leven@^3.1.0:
   version "3.1.0"
   resolved "https://registry.npmjs.org/leven/-/leven-3.1.0.tgz#77891de834064cccba82ae7842bb6b14a13ed7f2"
@@ -7276,6 +7291,15 @@ locate-path@^5.0.0:
   integrity sha512-t7hw9pI+WvuwNJXwk5zVHpyhIqzg2qTlklJOf0mVxGSbe3Fp2VieZcduNYjaLDoy6p9uGpQEGWG87WpMKlNq8g==
   dependencies:
     p-locate "^4.1.0"
+
+locomotive-scroll@^4.1.4:
+  version "4.1.4"
+  resolved "https://registry.npmjs.org/locomotive-scroll/-/locomotive-scroll-4.1.4.tgz#a6d83ba3c07a9c51fc1a6d95b4be614d4dc5aad2"
+  integrity sha512-6i98cFF2SKg6wIPpwVPuo2FG8qL3USsdDeew78TEYZyLoqleMWNfkSDpWA6mPym4dOfTIBXc678VmGlkgx3fTA==
+  dependencies:
+    bezier-easing "^2.1.0"
+    smoothscroll-polyfill "^0.4.4"
+    virtual-scroll "^1.5.2"
 
 lodash._reinterpolate@^3.0.0:
   version "3.0.0"
@@ -9429,6 +9453,14 @@ react-is@^17.0.1:
   resolved "https://registry.npmjs.org/react-is/-/react-is-17.0.2.tgz#e691d4a8e9c789365655539ab372762b0efb54f0"
   integrity sha512-w2GsyukL62IJnlaff/nRegPQR94C/XXamvMWmSHRJ4y7Ts/4ocGRmTHvOs8PSE6pB3dWOrD/nueuU5sduBsQ4w==
 
+react-locomotive-scroll@^0.2.2:
+  version "0.2.2"
+  resolved "https://registry.npmjs.org/react-locomotive-scroll/-/react-locomotive-scroll-0.2.2.tgz#50fd3982b5386cd3e4196d391cbdd327c0523079"
+  integrity sha512-F+1JCUNw2sU/g+wtvbxh8Oi4FPrhPQFKY7QlK0p3D0kl2JgK0FK9fF1G43wcZccP8YBrKU81T4ZQBf/DasgVOg==
+  dependencies:
+    use-debounce "6.0.1"
+    use-resize-observer "6.1.0"
+
 react-router-dom@^6.21.3:
   version "6.21.3"
   resolved "https://registry.npmjs.org/react-router-dom/-/react-router-dom-6.21.3.tgz#ef3a7956a3699c7b82c21fcb3dbc63c313ed8c5d"
@@ -9729,6 +9761,11 @@ requires-port@^1.0.0:
   version "1.0.0"
   resolved "https://registry.npmjs.org/requires-port/-/requires-port-1.0.0.tgz#925d2601d39ac485e091cf0da5c6e694dc3dcaff"
   integrity sha512-KigOCHcocU3XODJxsu8i/j8T9tzT4adHiecwORRQ0ZZFcp7ahwXuRU1m+yuO90C5ZUyGeGfocHDI14M3L3yDAQ==
+
+resize-observer-polyfill@^1.5.1:
+  version "1.5.1"
+  resolved "https://registry.npmjs.org/resize-observer-polyfill/-/resize-observer-polyfill-1.5.1.tgz#0e9020dd3d21024458d4ebd27e23e40269810464"
+  integrity sha512-LwZrotdHOo12nQuZlHEmtuXdqGoOD0OhaxopaNFxWzInpEgaLWoVuAMbTzixuosCx2nEG58ngzW3vxdWoxIgdg==
 
 resolve-cwd@^2.0.0:
   version "2.0.0"
@@ -10259,6 +10296,11 @@ slice-ansi@^2.1.0:
     ansi-styles "^3.2.0"
     astral-regex "^1.0.0"
     is-fullwidth-code-point "^2.0.0"
+
+smoothscroll-polyfill@^0.4.4:
+  version "0.4.4"
+  resolved "https://registry.npmjs.org/smoothscroll-polyfill/-/smoothscroll-polyfill-0.4.4.tgz#3a259131dc6930e6ca80003e1cb03b603b69abf8"
+  integrity sha512-TK5ZA9U5RqCwMpfoMq/l1mrH0JAR7y7KRvOBx0n2869aLxch+gT9GhN3yUfjiw+d/DiF1mKo14+hd62JyMmoBg==
 
 snapdragon-node@^2.0.1:
   version "2.1.1"
@@ -10913,6 +10955,11 @@ timsort@^0.3.0:
   resolved "https://registry.npmjs.org/timsort/-/timsort-0.3.0.tgz#405411a8e7e6339fe64db9a234de11dc31e02bd4"
   integrity sha512-qsdtZH+vMoCARQtyod4imc2nIJwg9Cc7lPRrw9CzF8ZKR0khdr8+2nX80PBhET3tcyTtJDxAffGh2rXH4tyU8A==
 
+tiny-emitter@^1.0.0:
+  version "1.2.0"
+  resolved "https://registry.npmjs.org/tiny-emitter/-/tiny-emitter-1.2.0.tgz#6dc845052cb08ebefc1874723b58f24a648c3b6f"
+  integrity sha512-rWjF00inHeWtT5UbQYAXoMI4hL6TRMqohuKCsODyPYYmfAxqfMnXLsIeNrbdPEkNxlk++rojVilTnI9IVmEBtA==
+
 tmp@^0.0.33:
   version "0.0.33"
   resolved "https://registry.npmjs.org/tmp/-/tmp-0.0.33.tgz#6d34335889768d21b2bcda0aa277ced3b1bfadf9"
@@ -11260,6 +11307,18 @@ url@^0.11.0:
     punycode "^1.4.1"
     qs "^6.11.2"
 
+use-debounce@6.0.1:
+  version "6.0.1"
+  resolved "https://registry.npmjs.org/use-debounce/-/use-debounce-6.0.1.tgz#ed1eb2b30189408fb9792ea2887f4c6c3cb401a3"
+  integrity sha512-kpvIxpa0vOLz/2I2sfNJ72mUeaT2CMNCu5BT1f2HkV9qZK27UVSOFf1sSSu+wjJE4TcR2VTXS2SM569+m3TN7Q==
+
+use-resize-observer@6.1.0:
+  version "6.1.0"
+  resolved "https://registry.npmjs.org/use-resize-observer/-/use-resize-observer-6.1.0.tgz#d4d267a940dbf9c326da6042f8a4bb8c89d29729"
+  integrity sha512-SiPcWHiIQ1CnHmb6PxbYtygqiZXR0U9dNkkbpX9VYnlstUwF8+QqpUTrzh13pjPwcjMVGR+QIC+nvF5ujfFNng==
+  dependencies:
+    resize-observer-polyfill "^1.5.1"
+
 use@^3.1.0:
   version "3.1.1"
   resolved "https://registry.npmjs.org/use/-/use-3.1.1.tgz#d50c8cac79a19fbc20f2911f56eb973f4e10070f"
@@ -11368,6 +11427,16 @@ verror@1.10.0:
     assert-plus "^1.0.0"
     core-util-is "1.0.2"
     extsprintf "^1.2.0"
+
+virtual-scroll@^1.5.2:
+  version "1.5.2"
+  resolved "https://registry.npmjs.org/virtual-scroll/-/virtual-scroll-1.5.2.tgz#cdc051135ea6a1ebaaecdd4a4f39b8ed807f0f53"
+  integrity sha512-7jDHwlKbHUho7CYU/HojE/VKFH8GV9P5fVWP2HCa7dRUOpVvwl93OBOKIIcb2mKd+vqsbVR/0zl0X70+3sUZqA==
+  dependencies:
+    bindall-standalone "^1.0.5"
+    lethargy "^1.0.2"
+    object-assign "^4.0.1"
+    tiny-emitter "^1.0.0"
 
 vm-browserify@^1.0.1:
   version "1.1.2"
