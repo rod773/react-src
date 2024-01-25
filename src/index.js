@@ -2,6 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./index.scss";
+
 import "bootstrap/dist/js/bootstrap.bundle";
 import Layout from "./pages/Layout/Layout";
 import Home from "./pages/Home/Home";

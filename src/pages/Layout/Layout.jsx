@@ -3,6 +3,8 @@ import { Outlet, Link } from "react-router-dom";
 import { LocomotiveScrollProvider } from "react-locomotive-scroll";
 import { useRef } from "react";
 
+import { GlobalStyle } from "./Layout.styled";
+
 const Layout = () => {
   const ref = useRef(null);
 
@@ -12,6 +14,7 @@ const Layout = () => {
 
   return (
     <>
+      <GlobalStyle />
       <LocomotiveScrollProvider options={options} containerRef={ref}>
         <main data-scroll-container ref={ref}>
           <section data-scroll-section>
