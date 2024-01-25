@@ -1,18 +1,26 @@
 {
   "files": {
-    "static/js/0.chunk.js": "/wp-content/themes/tienda/static/js/0.chunk.js",
-    "static/js/0.chunk.js.map": "/wp-content/themes/tienda/static/js/0.chunk.js.map",
+    "static/js/1.chunk.js": "/wp-content/themes/tienda/static/js/1.chunk.js",
+    "static/js/1.chunk.js.map": "/wp-content/themes/tienda/static/js/1.chunk.js.map",
     "main.css": "/wp-content/themes/tienda/static/css/main.chunk.css",
     "main.js": "/wp-content/themes/tienda/static/js/main.chunk.js",
     "main.css.map": "/wp-content/themes/tienda/static/css/main.chunk.css.map",
     "main.js.map": "/wp-content/themes/tienda/static/js/main.chunk.js.map",
     "runtime-main.js": "/wp-content/themes/tienda/static/js/bundle.js",
     "runtime-main.js.map": "/wp-content/themes/tienda/static/js/bundle.js.map",
-    "index.php": "/wp-content/themes/tienda/index.php"
+    "index.php": "/wp-content/themes/tienda/index.php",
+    "static/media/1-Enero-2016-Elefante.jpeg": "/wp-content/themes/tienda/static/media/1-Enero-2016-Elefante.eae716ae.jpeg",
+    "static/media/12-Bailaria-Cristal-30x40-2017-1-150x150.jpeg": "/wp-content/themes/tienda/static/media/12-Bailaria-Cristal-30x40-2017-1-150x150.3c9fcd97.jpeg",
+    "static/media/3-caballo-50x40-2015-10.jpeg": "/wp-content/themes/tienda/static/media/3-caballo-50x40-2015-10.90a06b56.jpeg",
+    "static/media/4-Las-cabezas-2015-11.jpeg": "/wp-content/themes/tienda/static/media/4-Las-cabezas-2015-11.3fbc00dc.jpeg",
+    "static/media/5-Torero-30x25-2016-3.jpeg": "/wp-content/themes/tienda/static/media/5-Torero-30x25-2016-3.bfd33bf8.jpeg",
+    "static/media/6-Elvis-30x25-2016-5.jpeg": "/wp-content/themes/tienda/static/media/6-Elvis-30x25-2016-5.394546de.jpeg",
+    "static/media/7-Marilyn-30x25-2016-7.jpeg": "/wp-content/themes/tienda/static/media/7-Marilyn-30x25-2016-7.7eba2423.jpeg",
+    "static/media/9-bodegon-70x50-2016-10-300x300.jpeg": "/wp-content/themes/tienda/static/media/9-bodegon-70x50-2016-10-300x300.40bdcdf1.jpeg"
   },
   "entrypoints": [
     "static/js/bundle.js",
-    "static/js/0.chunk.js",
+    "static/js/1.chunk.js",
     "static/css/main.chunk.css",
     "static/js/main.chunk.js"
   ]
