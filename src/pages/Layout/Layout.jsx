@@ -2,7 +2,7 @@ import React from "react";
 import { Outlet, Link } from "react-router-dom";
 import { LocomotiveScrollProvider } from "react-locomotive-scroll";
 import { useRef } from "react";
-import Footer from "../../components/Footer";
+import Footer from "../../components/Footer/Footer";
 import { StyledLayout } from "./Layout.styled";
 
 const Layout = () => {

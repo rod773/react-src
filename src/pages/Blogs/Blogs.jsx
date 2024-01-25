@@ -1,7 +1,12 @@
 import React from "react";
+import { StyledBlogs } from "./Blogs.styled";
 
 const Home = () => {
-  return <h1>Blogs</h1>;
+  return (
+    <StyledBlogs>
+      <h1>Blogs</h1>
+    </StyledBlogs>
+  );
 };
 
 export default Home;

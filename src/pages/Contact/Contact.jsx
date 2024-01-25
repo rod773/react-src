@@ -1,7 +1,12 @@
 import React from "react";
+import { StyledContact } from "./Contact.styled";
 
 const Home = () => {
-  return <h1>Contact</h1>;
+  return (
+    <StyledContact>
+      <h1>Contact</h1>
+    </StyledContact>
+  );
 };
 
 export default Home;
