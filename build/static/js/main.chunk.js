@@ -1050,61 +1050,118 @@ const StyledContact = styled_components__WEBPACK_IMPORTED_MODULE_0__["default"].
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _Home_styled__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Home.styled */ "./src/pages/Home/Home.styled.jsx");
-/* harmony import */ var _Images__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./../../Images */ "./src/Images.js");
+/* harmony import */ var _home_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./home.scss */ "./src/pages/Home/home.scss");
+/* harmony import */ var _home_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_home_scss__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var framer_motion_dist_framer_motion__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! framer-motion/dist/framer-motion */ "./node_modules/framer-motion/dist/framer-motion.js");
+/* harmony import */ var framer_motion_dist_framer_motion__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(framer_motion_dist_framer_motion__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _Images__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./../../Images */ "./src/Images.js");
 var _jsxFileName = "D:\\CPANEL\\wordpress\\wp-content\\themes\\tienda\\react-src\\src\\pages\\Home\\Home.jsx";
 
 
-//import { motion, AnimateSharedLayout, AnimatePresence } from "framer-motion";
 
 
-const Home = () => {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Home_styled__WEBPACK_IMPORTED_MODULE_1__["StyledHome"], {
-    className: "container-fluid",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 9,
-      columnNumber: 5
-    }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
-    __self: undefined,
+
+function ProductImage({
+  id,
+  onExpand
+}) {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(framer_motion_dist_framer_motion__WEBPACK_IMPORTED_MODULE_2__["motion"].img, {
+    src: _Images__WEBPACK_IMPORTED_MODULE_3__["default"][id],
+    alt: "",
+    onClick: () => onExpand(id),
+    className: "related-product-image",
+    layoutId: `product-${id}`,
+    __self: this,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 10,
-      columnNumber: 7
+      columnNumber: 5
     }
-  }, "Home"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    src: _Images__WEBPACK_IMPORTED_MODULE_2__["default"][0],
-    alt: "",
+  });
+}
+const Home = () => {
+  const [productIds, setProductIds] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]);
+  const [primaryProduct, setPrimaryProduct] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(0);
+  function setAsPrimary(id) {
+    const currentProductId = primaryProduct;
+    const newProductIds = [...productIds.filter(x => x !== id), currentProductId];
+    setPrimaryProduct(id);
+    setProductIds(newProductIds);
+  }
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "container-main",
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 11,
+      lineNumber: 38,
+      columnNumber: 5
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("main", {
+    className: "primary-container",
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 39,
       columnNumber: 7
     }
-  }));
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(framer_motion_dist_framer_motion__WEBPACK_IMPORTED_MODULE_2__["AnimatePresence"], {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 40,
+      columnNumber: 9
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(framer_motion_dist_framer_motion__WEBPACK_IMPORTED_MODULE_2__["motion"].img, {
+    key: primaryProduct,
+    className: "primary-product-image",
+    src: _Images__WEBPACK_IMPORTED_MODULE_3__["default"][primaryProduct],
+    alt: "",
+    layoutId: `product-${primaryProduct}`,
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 41,
+      columnNumber: 11
+    }
+  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("aside", {
+    className: "product-gallery",
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 50,
+      columnNumber: 7
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(framer_motion_dist_framer_motion__WEBPACK_IMPORTED_MODULE_2__["AnimatePresence"], {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 51,
+      columnNumber: 9
+    }
+  }, productIds.map(id => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(ProductImage, {
+    id: id,
+    key: id,
+    onExpand: setAsPrimary,
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 53,
+      columnNumber: 13
+    }
+  })))));
 };
 /* harmony default export */ __webpack_exports__["default"] = (Home);
 
 /***/ }),
 
-/***/ "./src/pages/Home/Home.styled.jsx":
-/*!****************************************!*\
-  !*** ./src/pages/Home/Home.styled.jsx ***!
-  \****************************************/
-/*! exports provided: StyledHome */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ "./src/pages/Home/home.scss":
+/*!**********************************!*\
+  !*** ./src/pages/Home/home.scss ***!
+  \**********************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
 
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "StyledHome", function() { return StyledHome; });
-/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
-
-const StyledHome = styled_components__WEBPACK_IMPORTED_MODULE_0__["default"].div`
-  background-color: var(--bs-secondary);
-  height: 100vh;
-`;
+// extracted by mini-css-extract-plugin
 
 /***/ }),
 
@@ -1368,5 +1425,5 @@ module.exports = __webpack_require__(/*! D:\CPANEL\wordpress\wp-content\themes\t
 
 /***/ })
 
-},[[0,"runtime-main",1]]]);
+},[[0,"runtime-main",0]]]);
 //# sourceMappingURL=main.chunk.js.map
