@@ -23,10 +23,10 @@
     "craeject": "react-scripts eject",
     "crastart": "react-scripts start",
     "cratest": "react-scripts test",
-    "build": "wptheme-scripts build",
-    "start": "wptheme-scripts --openssl-legacy-provider  start",
-    "wpbuild": "wptheme-scripts --openssl-legacy-provider  wpbuild",
-    "wpstart": "wptheme-scripts --openssl-legacy-provider  wpstart"
+    "build": "set NODE_OPTIONS=--openssl-legacy-provider && wptheme-scripts build",
+    "start": "set NODE_OPTIONS=--openssl-legacy-provider && wptheme-scripts   start",
+    "wpbuild": "set NODE_OPTIONS=--openssl-legacy-provider && wptheme-scripts   wpbuild",
+    "wpstart": "set NODE_OPTIONS=--openssl-legacy-provider && wptheme-scripts   wpstart"
   },
   "eslintConfig": {
     "extends": "react-app"
